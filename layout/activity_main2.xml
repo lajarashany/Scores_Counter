@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/winneract"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/medal2"
+    tools:context=".Main2Activity">
+
+    <TextView
+        android:id="@+id/WIN"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:fontFamily="cursive"
+        android:text="WINNER IS:"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textDirection="locale"
+        android:textScaleX="1.2"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/champion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="156dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Champion"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="152dp" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="229dp"
+        android:layout_height="62dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="209dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="86dp"
+        android:layout_marginEnd="13dp"
+        android:background="@drawable/call2" />
+
+    <Button
+        android:id="@+id/send_msg"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/call"
+        android:layout_below="@+id/points"
+        android:layout_marginTop="-209dp"
+        android:background="@drawable/msg" />
+
+    <Button
+        android:id="@+id/map"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/call"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/map" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:hint="Enter phone #"
+        android:textColorHint="#61d0fa"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+
+
+    android:layout_height="match_parent"
+    android:background="@drawable/sport1"
+    android:backgroundTintMode="src_in"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/APP_NAME"
+        android:layout_width="324dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:background="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:paddingTop="7dp"
+        android:text="Game Scores"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/teamalayout"
+        android:layout_width="125dp"
+        android:layout_height="105dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="138dp">
+
+        <ImageView
+            android:id="@+id/team_a"
+            android:layout_width="125dp"
+            android:layout_height="105dp"
+            android:background="@drawable/a1"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/team_b"
+        android:layout_width="125dp"
+        android:layout_height="105dp"
+        android:layout_alignStart="@+id/b_score"
+        android:layout_alignTop="@+id/teamalayout"
+        android:background="@drawable/b1"
+        android:elevation="0dp"
+        android:paddingTop="10dp"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/a_score"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/b_score"
+        android:layout_marginStart="104dp"
+        android:background="@android:color/black"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/b_score"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="159dp"
+        android:layout_marginEnd="104dp"
+        android:background="@android:color/black"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/plus_a"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/teamalayout"
+        android:layout_marginBottom="168dp"
+        android:background="@android:drawable/ic_input_add"
+        android:onClick="countUp" />
+
+    <TextView
+        android:id="@+id/plus_b"
+        android:layout_width="44dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/plus_a"
+        android:layout_marginEnd="48dp"
+        android:background="@android:drawable/ic_input_add"
+        android:onClick="countUp2" />
+
+</RelativeLayout>

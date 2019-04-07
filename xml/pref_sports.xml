@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/List_of_Sports_choices"
+        android:entryValues="@array/List_of_Sports"
+        android:key="list_preference_1"
+        android:summary="Choose your favorite Sport for background."
+        android:title="Sports" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/List_of_Team_choices"
+        android:entryValues="@array/List_of_Team"
+        android:key="list_preference_2"
+        android:summary="Choose your favorite team of the season."
+        android:title="Teams" />
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/List_of_Backgrounds_choices"
+        android:entryValues="@array/List_of_Backgrounds"
+        android:key="list_preference_3"
+        android:summary="Choose Winner's Award for background display."
+        android:title="Awards" />
+</PreferenceScreen>
